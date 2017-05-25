@@ -1,0 +1,45 @@
+{
+  "name": "nxus-test-data",
+  "version": "0.0.1",
+  "description": "utilities to help load data for unit/integration tests in nxus",
+  "main": "index.js",
+  "scripts": {
+    "compile": "rm -r lib/; babel src --out-dir lib",
+    "test": "NODE_ENV=test; mocha  --require babel-register"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seabourne/nxus-test-data.git"
+  },
+  "keywords": [
+    "nxus",
+    "testing",
+    "data",
+    "mongo"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seabourne/nxus-test-data/issues"
+  },
+  "homepage": "https://github.com/seabourne/nxus-test-data#readme",
+  "dependencies": {
+    "mongodb": "^2.2.26",
+    "nxus-core": "^4.0.0-4",
+    "nxus-data-manager": "^4.0.0-3",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-core": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-plugin-transform-class-properties": "^6.11.5",
+    "babel-plugin-transform-function-bind": "^6.8.0",
+    "babel-plugin-transform-object-rest-spread": "^6.8.0",
+    "babel-preset-es2015": "^6.9.0",
+    "chai": "^3.4.1",
+    "mocha": "^2.4.1",
+    "should": "^7.0.2"
+  }
+}
